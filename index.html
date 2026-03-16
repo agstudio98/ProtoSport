@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProtoSport</title>
+  <meta name="description" content="ProtoSport: calzado y ropa deportiva de las mejores marcas en Córdoba. Nike, Adidas, Puma, Kappa, Umbro y más." />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- THREE.JS CANVAS -->
+  <canvas id="canvas-bg"></canvas>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">PS</div>
+      <span class="nav-logo-text">Proto<span>Sport</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Inicio</a></li>
+      <li><a href="pages/catalogo.html">Catálogo</a></li>
+      <li><a href="pages/soporte.html">Soporte</a></li>
+    </ul>
+    <a href="pages/catalogo.html" class="nav-cta">Ver Catálogo</a>
+    <button class="hamburger" aria-label="Menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-overlay"></div>
+  <div class="mobile-menu">
+    <a href="index.html" class="active">Inicio</a>
+    <a href="pages/catalogo.html">Catálogo</a>
+    <a href="pages/soporte.html">Soporte</a>
+    <a href="pages/catalogo.html" class="nav-cta-mobile">Ver Catálogo</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-bg-radial"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-eyebrow">
+          <span class="hero-badge">Córdoba · General Paz</span>
+          Fundada 2018
+        </div>
+        <h1 class="hero-title">
+          <span class="line-1">Proto</span>
+          <span class="line-2">Sport</span>
+        </h1>
+        <p class="hero-tagline">Indumentaria deportiva premium</p>
+        <p class="hero-desc">
+          De un departamento en Córdoba al local de tus sueños. Los Hermanos Benítez crearon un espacio donde el deporte y el estilo se fusionan. Calzado, ropa y accesorios de las mejores marcas del mundo.
+        </p>
+        <div class="hero-actions">
+          <a href="pages/catalogo.html" class="btn-primary">Explorar catálogo</a>
+          <a href="#historia" class="btn-ghost">Nuestra historia</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <span class="hero-stat-num" data-counter="7" data-suffix="+">0+</span>
+            <span class="hero-stat-label">Marcas</span>
+          </div>
+          <div>
+            <span class="hero-stat-num" data-counter="6" data-suffix=" años">0 años</span>
+            <span class="hero-stat-label">En el mercado</span>
+          </div>
+          <div>
+            <span class="hero-stat-num" data-counter="500" data-suffix="+">0+</span>
+            <span class="hero-stat-label">Clientes</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="logo-3d-wrap">
+          <div class="logo-3d-bg"></div>
+          <div class="logo-3d-ring"></div>
+          <div class="logo-3d-ring-2"></div>
+          <div class="logo-3d-core">
+            <span class="logo-inner-text">PS</span>
+            <span class="logo-inner-sub">ProtoSport</span>
+          </div>
+          <!-- Orbital dots -->
+          <div class="logo-dots">
+            <div class="logo-dot" style="top:10%;left:50%;transform:translate(-50%,-50%)"></div>
+            <div class="logo-dot" style="top:50%;left:4%;transform:translate(-50%,-50%)"></div>
+            <div class="logo-dot" style="top:90%;left:50%;transform:translate(-50%,-50%)"></div>
+            <div class="logo-dot" style="top:50%;left:96%;transform:translate(-50%,-50%)"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="timeline-section" id="historia">
+    <div class="timeline-container">
+      <div class="timeline-header animate-in">
+        <div class="section-label">Nuestra Historia</div>
+        <h2 class="section-title" style="font-size:clamp(28px,4vw,52px);">Cómo llegamos<br><span style="color:var(--arctic);">hasta aquí</span></h2>
+      </div>
+      <div class="timeline-wrap">
+        <div class="timeline-line"></div>
+
+        <div class="timeline-item animate-in">
+          <div class="timeline-content">
+            <div class="timeline-year-wrap">
+              <span class="timeline-year">2018</span>
+              <span class="timeline-badge">Fundación</span>
+            </div>
+            <div class="timeline-title-text">El inicio del sueño</div>
+            <p class="timeline-desc">Los Hermanos Benítez fundan ProtoSport en Córdoba con una visión clara: democratizar el acceso a indumentaria deportiva de calidad. Comenzaron desde cero, con pasión y determinación.</p>
+          </div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-spacer"></div>
+        </div>
+
+        <div class="timeline-item animate-in">
+          <div class="timeline-spacer"></div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year-wrap">
+              <span class="timeline-year">2019</span>
+              <span class="timeline-badge">Crecimiento</span>
+            </div>
+            <div class="timeline-title-text">Primeros pasos en casa</div>
+            <p class="timeline-desc">Operando desde el departamento de uno de los hermanos, construyeron su clientela de boca en boca. Las primeras marcas aliadas llegaron: Nike y Adidas abrieron las puertas del mercado premium.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item animate-in">
+          <div class="timeline-content">
+            <div class="timeline-year-wrap">
+              <span class="timeline-year">2021</span>
+              <span class="timeline-badge">Expansión</span>
+            </div>
+            <div class="timeline-title-text">Crecimiento acelerado</div>
+            <p class="timeline-desc">La base de clientes creció exponencialmente. Se sumaron Puma, Kappa, Umbro y Penalty al portafolio. Los ingresos permitieron empezar a planificar el gran salto: tener un local propio.</p>
+          </div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-spacer"></div>
+        </div>
+
+        <div class="timeline-item animate-in">
+          <div class="timeline-spacer"></div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year-wrap">
+              <span class="timeline-year">2023</span>
+              <span class="timeline-badge">Milestone</span>
+            </div>
+            <div class="timeline-title-text">El local propio</div>
+            <p class="timeline-desc">ProtoSport inaugura su local en el Barrio General Paz, Córdoba. Un espacio diseñado para vivir la experiencia deportiva completa: probadores, exhibición de calzado y atención personalizada.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item animate-in">
+          <div class="timeline-content">
+            <div class="timeline-year-wrap">
+              <span class="timeline-year">2026</span>
+              <span class="timeline-badge" style="background:var(--arctic);color:var(--void);">Actual</span>
+            </div>
+            <div class="timeline-title-text">Presente y futuro</div>
+            <p class="timeline-desc">Hoy ProtoSport es referente en Córdoba con +500 clientes activos, 7 marcas afiliadas y presencia digital. El futuro apunta a la expansión y a seguir llevando lo mejor del deporte a cada rincón.</p>
+          </div>
+          <div class="timeline-dot" style="background:var(--frost);box-shadow:0 0 0 4px var(--void),0 0 0 6px rgba(133,193,233,0.4),0 0 30px var(--frost);"></div>
+          <div class="timeline-spacer"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS LEMAS -->
+  <section class="benefits-section">
+    <div style="max-width:1200px;margin:0 auto;">
+      <div class="animate-in" style="text-align:center;margin-bottom:60px;">
+        <div class="section-label" style="justify-content:center;">Por qué elegirnos</div>
+        <h2 class="section-title" style="font-size:clamp(28px,4vw,52px);">Más que una tienda,<br><span style="color:var(--arctic);">una comunidad</span></h2>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefit-card animate-in">
+          <div class="benefit-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+          </div>
+          <div class="benefit-title">100% Originales</div>
+          <p class="benefit-desc">Cada producto viene directo de distribuidoras oficiales. Garantía de autenticidad en cada compra.</p>
+        </div>
+        <div class="benefit-card animate-in">
+          <div class="benefit-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <div class="benefit-title">Atención rápida</div>
+          <p class="benefit-desc">Respondemos en minutos por WhatsApp. Coordina tu compra de forma rápida y sin vueltas.</p>
+        </div>
+        <div class="benefit-card animate-in">
+          <div class="benefit-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 13L2 9z"/><path d="M11 3L8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></svg>
+          </div>
+          <div class="benefit-title">Calidad Premium</div>
+          <p class="benefit-desc">Trabajamos solo con las marcas líderes del mercado deportivo mundial. Nike, Adidas, Puma y más.</p>
+        </div>
+        <div class="benefit-card animate-in">
+          <div class="benefit-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="benefit-title">Local en Córdoba</div>
+          <p class="benefit-desc">Retirá en nuestro local del Barrio General Paz. Atención personalizada de lunes a sábado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED CATALOG -->
+  <section class="catalog-section" id="catalogo">
+    <div class="catalog-header animate-in">
+      <div>
+        <div class="section-label">Productos destacados</div>
+        <h2 class="section-title" style="font-size:clamp(24px,3.5vw,44px);">Lo más <span style="color:var(--arctic);">popular</span></h2>
+      </div>
+      <a href="pages/catalogo.html" class="btn-ghost">Ver todo el catálogo →</a>
+    </div>
+    <div class="catalog-grid">
+
+      <div class="product-card animate-in">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&q=80" alt="Air Zoom Running Pro" loading="lazy" />
+          <span class="product-badge">Nuevo</span>
+          <span class="product-brand-badge">Nike</span>
+        </div>
+        <div class="product-info">
+          <div class="product-cat">Calzado Deportivo</div>
+          <div class="product-name">Air Zoom Running Pro</div>
+          <p class="product-desc-short">Máxima amortiguación y soporte. Tecnología Air Zoom para tus mejores tiempos.</p>
+          <div class="product-footer">
+            <div class="product-price"><span class="price-symbol">$</span>89.990</div>
+            <a href="pages/catalogo.html" class="product-btn">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card animate-in">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=600&q=80" alt="Ultraboost Speed X" loading="lazy" />
+          <span class="product-badge">Destacado</span>
+          <span class="product-brand-badge">Adidas</span>
+        </div>
+        <div class="product-info">
+          <div class="product-cat">Calzado Deportivo</div>
+          <div class="product-name">Ultraboost Speed X</div>
+          <p class="product-desc-short">Entresuela Boost que devuelve energía en cada zancada. Diseño futurista.</p>
+          <div class="product-footer">
+            <div class="product-price"><span class="price-symbol">$</span>95.000</div>
+            <a href="pages/catalogo.html" class="product-btn">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card animate-in">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=600&q=80" alt="Buzo Climawarm" loading="lazy" />
+          <span class="product-badge">Oferta</span>
+          <span class="product-brand-badge">Adidas</span>
+        </div>
+        <div class="product-info">
+          <div class="product-cat">Buzos Deportivos</div>
+          <div class="product-name">Buzo Climawarm Pro</div>
+          <p class="product-desc-short">Tecnología COLD.RDY para mantener la temperatura perfecta en entrenamientos de invierno.</p>
+          <div class="product-footer">
+            <div class="product-price"><span class="price-symbol">$</span>52.000 <span style="font-size:12px;color:var(--steel);text-decoration:line-through;font-weight:400;">$68.000</span></div>
+            <a href="pages/catalogo.html" class="product-btn">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROMOS -->
+  <section class="promo-section">
+    <div style="max-width:1200px;margin:0 auto;">
+      <div class="animate-in" style="margin-bottom:60px;">
+        <div class="section-label">Promociones</div>
+        <h2 class="section-title" style="font-size:clamp(28px,4vw,52px);">Hot <span style="color:var(--arctic);">Sales</span></h2>
+      </div>
+      <div class="promo-grid">
+        <div class="promo-card promo-featured animate-in">
+          <div class="promo-card-bg"></div>
+          <div class="promo-card-pattern"></div>
+          <div class="promo-content">
+            <span class="promo-tag">HotSale</span>
+            <div class="promo-title-card">Calzado<br>Running</div>
+            <div class="promo-discount">-25%</div>
+            <p class="promo-desc-card">Toda la línea de zapatillas Nike y Adidas con descuento especial. Stock limitado.</p>
+            <a href="pages/catalogo.html" class="btn-primary">Ver ofertas</a>
+          </div>
+        </div>
+        <div class="promo-stack">
+          <div class="promo-mini animate-in">
+            <div class="promo-mini-discount">-30%</div>
+            <div class="promo-mini-title">Ropa Ciclista</div>
+            <p class="promo-mini-desc">Kits completos Kappa y Umbro para ciclismo. ¡Temporada de verano!</p>
+          </div>
+          <div class="promo-mini animate-in">
+            <div class="promo-mini-discount">3x2</div>
+            <div class="promo-mini-title">Playeros</div>
+            <p class="promo-mini-desc">Llevá 3 pares de ojotas o crocs y pagá solo 2. Ideal para la familia.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAYMENTS -->
+  <section class="payments-section">
+    <div class="payments-container">
+      <div class="animate-in">
+        <div class="section-label" style="justify-content:center;">Pagos seguros</div>
+        <h2 class="section-title" style="font-size:clamp(24px,3vw,40px);margin-bottom:8px;">Medios de <span style="color:var(--arctic);">pago</span></h2>
+        <p style="color:var(--steel);font-size:14px;">Comprá con total confianza y comodidad</p>
+      </div>
+      <div class="payments-grid animate-in">
+        <div class="payment-card">
+          <div class="payment-icon" style="background:linear-gradient(135deg,#009ee3,#00b9f2);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+          </div>
+          <div class="payment-info">
+            <span class="payment-name">MercadoPago</span>
+            <div class="payment-detail">QR · Transferencia · Link</div>
+          </div>
+        </div>
+        <div class="payment-card">
+          <div class="payment-icon" style="background:linear-gradient(135deg,#1a1f71,#2f6eb4);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M20 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>
+          </div>
+          <div class="payment-info">
+            <span class="payment-name">Tarjeta Visa</span>
+            <div class="payment-detail">Hasta 12 cuotas sin interés</div>
+          </div>
+        </div>
+        <div class="payment-card">
+          <div class="payment-icon" style="background:linear-gradient(135deg,#27ae60,#2ecc71);">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
+          </div>
+          <div class="payment-info">
+            <span class="payment-name">Efectivo</span>
+            <div class="payment-detail">Descuento especial · En local</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRANDS -->
+  <section class="brands-section">
+    <div class="brands-container">
+      <div class="animate-in" style="text-align:center;margin-bottom:60px;">
+        <div class="section-label" style="justify-content:center;">Partners</div>
+        <h2 class="section-title" style="font-size:clamp(28px,4vw,52px);">Marcas <span style="color:var(--arctic);">afiliadas</span></h2>
+        <p style="color:var(--steel);margin-top:16px;font-size:15px;max-width:500px;margin-left:auto;margin-right:auto;">Trabajamos con las mejores marcas deportivas del mundo para ofrecerte calidad premium</p>
+      </div>
+      <div class="brands-grid">
+        <!-- Nike -->
+        <div class="brand-card animate-in">
+          <div class="brand-card-inner">
+            <div class="brand-logo-wrap brand-nike">
+              <svg viewBox="0 0 100 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 30L55 5C62 2 72 3 68 12C65 19 20 28 5 30Z"/>
+              </svg>
+            </div>
+            <span class="brand-name">Nike</span>
+            <span class="brand-desc">Running · Basketball</span>
+          </div>
+        </div>
+        <!-- Adidas -->
+        <div class="brand-card animate-in">
+          <div class="brand-card-inner">
+            <div class="brand-logo-wrap brand-adidas">
+              <svg viewBox="0 0 80 60" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="40,5 70,55 10,55"/>
+              </svg>
+            </div>
+            <span class="brand-name">Adidas</span>
+            <span class="brand-desc">Running · Training</span>
+          </div>
+        </div>
+        <!-- Puma -->
+        <div class="brand-card animate-in">
+          <div class="brand-card-inner">
+            <div class="brand-logo-wrap brand-puma">
+              <svg viewBox="0 0 80 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 5C15 5 25 30 40 30C55 30 65 5 65 5M5 15C5 15 10 25 20 25M70 15C70 15 75 25 85 25" stroke="currentColor" stroke-width="6" fill="none"/>
+              </svg>
+            </div>
+            <span class="brand-name">Puma</span>
+            <span class="brand-desc">Lifestyle · Sports</span>
+          </div>
+        </div>
+        <!-- Kappa -->
+        <div class="brand-card animate-in">
+          <div class="brand-card-inner">
+            <div class="brand-logo-wrap brand-kappa">
+              <svg viewBox="0 0 80 50" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <text y="38" font-size="28" font-weight="900" font-family="Arial" letter-spacing="2">KAPPA</text>
+              </svg>
+            </div>
+            <span class="brand-name">Kappa</span>
+            <span class="brand-desc">Cycling · Football</span>
+          </div>
+        </div>
+        <!-- Umbro -->
+        <div class="brand-card animate-in">
+          <div class="brand-card-inner">
+            <div class="brand-logo-wrap brand-umbro">
+              <svg viewBox="0 0 80 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <text y="30" font-size="24" font-weight="900" font-family="Arial">UMBRO</text>
+              </svg>
+            </div>
+            <span class="brand-name">Umbro</span>
+            <span class="brand-desc">Football · Training</span>
+          </div>
+        </div>
+        <!-- Penalty -->
+        <div class="brand-card animate-in">
+          <div class="brand-card-inner">
+            <div class="brand-logo-wrap brand-penalty">
+              <svg viewBox="0 0 80 50" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <text y="36" font-size="22" font-weight="900" font-family="Arial">PENALTY</text>
+              </svg>
+            </div>
+            <span class="brand-name">Penalty</span>
+            <span class="brand-desc">Futsal · Football</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSPIRATIONAL QUOTE -->
+  <section class="quote-section">
+    <div class="quote-bg"></div>
+    <div class="animate-in">
+      <div class="section-label" style="justify-content:center;margin-bottom:32px;">Nuestra filosofía</div>
+      <h2 class="quote-text">
+        "El <em>límite</em> no existe cuando llevás el equipo <em>correcto</em>"
+      </h2>
+      <p class="quote-author">— ProtoSport, Córdoba 2018</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="margin-bottom:0;">
+          <div class="nav-logo-icon">PS</div>
+          <span class="nav-logo-text">Proto<span>Sport</span></span>
+        </a>
+        <p>Indumentaria deportiva premium fundada en Córdoba por los Hermanos Benítez. Calzado, ropa y accesorios de las mejores marcas del mundo.</p>
+        <div style="display:flex;gap:12px;margin-top:20px;">
+          <a href="https://wa.me/5493515000000" target="_blank" style="width:36px;height:36px;background:var(--glass);border:var(--border-glow);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--frost);text-decoration:none;transition:var(--transition);" aria-label="WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+          <a href="#" style="width:36px;height:36px;background:var(--glass);border:var(--border-glow);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--frost);text-decoration:none;transition:var(--transition);" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="#" style="width:36px;height:36px;background:var(--glass);border:var(--border-glow);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--frost);text-decoration:none;transition:var(--transition);" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="pages/catalogo.html">Catálogo</a></li>
+          <li><a href="pages/soporte.html">Soporte</a></li>
+          <li><a href="#historia">Historia</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Categorías</h4>
+        <ul>
+          <li><a href="pages/catalogo.html">Calzado Deportivo</a></li>
+          <li><a href="pages/catalogo.html">Calzado Playero</a></li>
+          <li><a href="pages/catalogo.html">Remeras</a></li>
+          <li><a href="pages/catalogo.html">Buzos</a></li>
+          <li><a href="pages/catalogo.html">Ciclismo</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="https://wa.me/5493515000000" target="_blank">WhatsApp</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="pages/soporte.html">Chat de soporte</a></li>
+        </ul>
+        <div style="margin-top:20px;padding:16px;background:var(--glass);border:var(--border-glow);border-radius:10px;">
+          <div style="font-size:11px;color:var(--arctic);font-family:var(--font-ui);letter-spacing:2px;text-transform:uppercase;margin-bottom:6px;">Local</div>
+          <div style="font-size:13px;color:var(--frost);line-height:1.5;">Barrio General Paz<br>Córdoba, Argentina</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 <span>ProtoSport</span> · Todos los derechos reservados</p>
+      <p>Desarrollado por <span>Ag Studio 2026</span></p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
