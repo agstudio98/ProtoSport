@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soporte</title>
+  <meta name="description" content="Soporte y ayuda ProtoSport. Chatea con nuestro asistente virtual." />
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="../index.html" class="nav-logo">
+      <div class="nav-logo-icon">PS</div>
+      <span class="nav-logo-text">Proto<span>Sport</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="catalogo.html">Catálogo</a></li>
+      <li><a href="soporte.html" class="active">Soporte</a></li>
+    </ul>
+    <a href="catalogo.html" class="nav-cta">Ver Catálogo</a>
+    <button class="hamburger" aria-label="Menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-overlay"></div>
+  <div class="mobile-menu">
+    <a href="../index.html">Inicio</a>
+    <a href="catalogo.html">Catálogo</a>
+    <a href="soporte.html" class="active">Soporte</a>
+    <a href="catalogo.html" class="nav-cta-mobile">Ver Catálogo</a>
+  </div>
+
+  <div class="chatbot-page">
+
+    <!-- CHATBOT HEADER -->
+    <div class="chatbot-header">
+      <div class="chatbot-title-wrap">
+        <div class="chatbot-avatar"><span style="font-family:var(--font-display);font-size:13px;font-weight:900;letter-spacing:-0.5px;color:var(--white);">PB</span></div>
+        <div>
+          <div class="chatbot-name">ProtoBot</div>
+          <div class="chatbot-status">● En línea · Asistente ProtoSport</div>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;gap:16px;">
+        <a href="https://wa.me/5493515000000" target="_blank" style="display:flex;align-items:center;gap:8px;background:rgba(37,211,102,0.1);border:1px solid rgba(37,211,102,0.3);border-radius:8px;padding:8px 16px;text-decoration:none;transition:var(--transition);">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          <span style="font-family:var(--font-ui);font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#25D366;">WhatsApp</span>
+        </a>
+        <div style="font-family:var(--font-ui);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--steel);">Soporte · ProtoSport</div>
+      </div>
+    </div>
+
+    <div class="chatbot-body">
+
+      <!-- SUGGESTIONS PANEL -->
+      <div class="chat-suggestions-panel">
+        <div class="sugg-title">Preguntas frecuentes</div>
+
+        <button class="sugg-btn" data-query="¿Cómo puedo comprar un producto?">
+          <span class="sugg-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></span>
+          ¿Cómo comprar?
+        </button>
+        <button class="sugg-btn" data-query="¿Qué productos tienen disponibles?">
+          <span class="sugg-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="7" height="7"/><rect x="15" y="3" width="7" height="7"/><rect x="15" y="14" width="7" height="7"/><rect x="2" y="14" width="7" height="7"/></svg></span>
+          Ver catálogo
+        </button>
+        <button class="sugg-btn" data-query="¿Qué marcas trabajan?">
+          <span class="sugg-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg></span>
+          Marcas disponibles
+        </button>
+        <button class="sugg-btn" data-query="¿Cuáles son los métodos de pago?">
+          <span class="sugg-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></span>
+          Métodos de pago
+        </button>
+        <button class="sugg-btn" data-query="¿Dónde está el local?">
+          <span class="sugg-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          Ubicación del local
+        </button>
+        <button class="sugg-btn" data-query="¿Hacen envíos?">
+          <span class="sugg-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></span>
+          Envíos
+        </button>
+        <button class="sugg-btn" data-query="¿Cuál es la historia de ProtoSport?">
+          <span class="sugg-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></span>
+          Nuestra historia
+        </button>
+        <button class="sugg-btn" data-query="¿Cómo usar la página web?">
+          <span class="sugg-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></span>
+          Cómo usar el sitio
+        </button>
+
+        <div style="margin-top:24px;padding:16px;background:var(--glass);border:var(--border-glow);border-radius:12px;">
+          <div style="font-family:var(--font-ui);font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--arctic);margin-bottom:8px;">Contacto directo</div>
+          <a href="https://wa.me/5493515000000" target="_blank" style="display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--frost);font-size:13px;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Escribinos por WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- CHAT MAIN -->
+      <div class="chat-main">
+        <div class="chat-messages" id="chatMessages">
+          <!-- Messages rendered by JS -->
+        </div>
+
+        <!-- INPUT AREA -->
+        <div class="chat-input-area">
+          <div style="max-width:900px;margin:0 auto;">
+            <div class="chat-input-row">
+              <textarea
+                class="chat-textarea"
+                id="chatInput"
+                placeholder="Escribí tu pregunta aquí... (Enter para enviar)"
+                rows="1"
+              ></textarea>
+              <button class="chat-send-btn" id="sendBtn" title="Enviar mensaje">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                </svg>
+              </button>
+            </div>
+            <p class="chat-disclaimer">ProtoBot puede no tener toda la información. Para consultas urgentes, contactanos por <a href="https://wa.me/5493515000000" target="_blank" style="color:var(--arctic);">WhatsApp</a></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/chatbot.js"></script>
+
+  <script>
+    // Add page-specific KB entry
+    const originalKB_default = window.KB;
+    // "como usar el sitio" response handled in KB
+  </script>
+
+  <script>
+    // Extend chatbot with "how to use site" knowledge
+    document.addEventListener('DOMContentLoaded', () => {
+      // Override getReply to add more context
+      const _origGetReply = window.getReply;
+      // Already handled in chatbot.js
+    });
+  </script>
+</body>
+</html>
